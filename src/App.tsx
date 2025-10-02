@@ -13,10 +13,10 @@ function App() {
       <Header />
       <div className="space-y-12">
         <Routes>
-          <Route path="/" element={<HomePage />}/>
-          <Route path="/products" element={<ProductPage />}/>
-          <Route path="/products/:id" element={<ProductDetailsPage />}/>
-          <Route path="/about" element={<AboutPage />}/>
+          <Route path="/react-task/" element={<HomePage />}/>
+          <Route path="/react-task/products" element={<ProductPage />}/>
+          <Route path="/react-task/products/:id" element={<ProductDetailsPage />}/>
+          <Route path="/react-task/about" element={<AboutPage />}/>
         </Routes>
       </div>
     </div>

@@ -6,23 +6,24 @@ const sliderData = [
     title: "Experience Pure Sound - Your Perfect Headphones Awaits!",
     offer: "Limited Time Offer 30% Off",
     buttonText1: "Buy now",
-    imgSrc: "/header_headphone_image.png",
+    imgSrc: "header_headphone_image.png",
   },
   {
     id: 2,
     title: "Next-Level Gaming Starts Here - Discover PlayStation 5 Today!",
     offer: "Hurry up only few lefts!",
     buttonText1: "Shop Now",
-    imgSrc: "/header_playstation_image.png",
+    imgSrc: "header_playstation_image.png",
   },
   {
     id: 3,
     title: "Power Meets Elegance - Apple MacBook Pro is Here for you!",
     offer: "Exclusive Deal 40% Off",
     buttonText1: "Order Now",
-    imgSrc: "/header_macbook_image.png",
+    imgSrc: "header_macbook_image.png",
   },
 ];
+
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,11 +53,12 @@ export default function HeroSection() {
             </button>
         </div>
         <div className="flex-1 hidden md:block relative w-full h-64">
-          <img
-            src={sliderData[currentSlide].imgSrc}
-            alt={sliderData[currentSlide].title}
-            className="object-contain w-full h-full"
-          />
+        <img
+          src={`${import.meta.env.BASE_URL}${sliderData[currentSlide].imgSrc}`}
+          alt={sliderData[currentSlide].title}
+          className="object-contain w-full h-full"
+        />
+
         </div>
       </div>
       <div className="flex items-center gap-1 mx-auto">
