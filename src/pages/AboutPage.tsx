@@ -34,7 +34,7 @@ const AboutPage = () => {
               </p>
             </div>
             <div className="flex justify-center md:justify-start">
-              <Link to="/products">
+              <Link to="/react-task/products">
                 <button className="bg-destructive text-white font-medium py-2 px-6 rounded hover:bg-destructive/80 transition duration-300">
                   Back to Products
                 </button>

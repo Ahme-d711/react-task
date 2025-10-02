@@ -13,7 +13,7 @@ const ProductCard = ({ product }: { product: Product}) => {
         <h2 className="text-xl font-semibold text-card-foreground mb-2 line-clamp-1">{product.title}</h2>
         <h2 className="text-primary mb-2 line-clamp-2">{product.description}</h2>
         <p className="text-lg font-bold text-destructive mb-4">${product.price}</p>
-        <Link to={`/products/${product.id}`} >
+        <Link to={`/react-task/products/${product.id}`} >
         <button className="w-full bg-destructive text-card-foreground font-medium py-2 px-4 rounded hover:bg-destructive/80 cursor-pointer transition duration-300">
           View Details
         </button>
