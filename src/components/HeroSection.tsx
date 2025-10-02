@@ -47,7 +47,7 @@ export default function HeroSection() {
           <h1 className="text-2xl lg:text-4xl pt-4 mb-6 font-bold">
             {sliderData[currentSlide].title}
           </h1>
-            <button className=" bg-destructive rounded-full text-white font-bold py-2 px-6 hover:bg-orange-700 transition-all">
+            <button className=" bg-destructive rounded-full text-white font-bold py-2 px-6 hover:bg-destructive/80 cursor-pointer transition-all">
               {sliderData[currentSlide].buttonText1}
             </button>
         </div>

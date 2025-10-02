@@ -1,6 +1,9 @@
 import { Route, Routes } from "react-router-dom"
-import HomePage from "./HomPage/components/pages/HomePage"
+import HomePage from "./pages/HomePage"
 import Header from "./components/Header"
+import ProductDetailsPage from "./pages/ProductDetailsPage"
+import ProductPage from "./pages/ProductPage"
+import AboutPage from "./pages/AboutPage"
 
 
 function App() {
@@ -11,6 +14,9 @@ function App() {
       <div className="space-y-12">
         <Routes>
           <Route path="/" element={<HomePage />}/>
+          <Route path="/products" element={<ProductPage />}/>
+          <Route path="/products/:id" element={<ProductDetailsPage />}/>
+          <Route path="/about" element={<AboutPage />}/>
         </Routes>
       </div>
     </div>
